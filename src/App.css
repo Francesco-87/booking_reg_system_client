@@ -1,0 +1,408 @@
+.page-header{
+    color: #faf6fa;
+    text-align:center;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 30px;
+    text-shadow: 10px 10px 8px #2a2727;
+
+
+
+}
+
+body{
+    margin:0;
+    color: #6a6f8c;
+    background: rgba(224, 224, 224, 0.44);
+    font:600 16px/18px 'Open Sans',sans-serif;
+    overflow: auto;
+    background:url("./images/buffet.jpg") no-repeat center;
+    background-size: cover;
+}
+/*Start of homepage login/registration format*/
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+    width:100%;
+    margin:auto;
+    max-width:525px;
+    min-height:800px;
+    position:relative;
+    /*background:url("./images/buffet.jpg") no-repeat center;*/
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+    width:100%;
+    height:100%;
+    position:absolute;
+    padding:60px 70px 50px 70px;
+    background:rgba(40,57,101,.9);
+    overflow: hidden;
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position:absolute;
+    transform:rotateY(180deg);
+    backface-visibility:hidden;
+    transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+    display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+    text-transform:uppercase;
+}
+.login-html .tab{
+    font-size:22px;
+    padding-bottom:5px;
+    margin:-10px 15px 10px 0;
+    display:inline-block;
+    border-bottom:2px solid transparent;
+    color: #fff;
+    cursor: pointer;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+    color:#fff;
+    border-color:#1161ee;
+}
+.login-form{
+    min-height:345px;
+    position:relative;
+    perspective:1000px;
+    transform-style:preserve-3d;
+}
+.login-form .group{
+    margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+    width:100%;
+    color:#fff;
+    display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+    border:none;
+    padding:15px 20px;
+    border-radius:25px;
+    background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+    text-security:circle;
+    -webkit-text-security:circle;
+}
+.login-form .group .label{
+    color:#aaa;
+    font-size:12px;
+}
+.login-form .group .button{
+    background:#1161ee;
+}
+.login-form .group label .icon{
+    width:15px;
+    height:15px;
+    border-radius:2px;
+    position:relative;
+    display:inline-block;
+    background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+    content:'';
+    width:10px;
+    height:2px;
+    background:#fff;
+    position:absolute;
+    transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+    left:3px;
+    width:5px;
+    bottom:6px;
+    transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+    top:6px;
+    right:0;
+    transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+    color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+    background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+    transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+    transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+    transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+    transform:rotate(0);
+}
+
+.hr{
+    height:2px;
+    margin:20px 0 10px 0;
+    background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+    text-align:center;
+    color: rgba(255, 255, 255, 0.6);
+}
+/*End of homepage login/registration format*/
+
+
+
+/*Start of ChefsHomepage*/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.left-column {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.right-column {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fake-img {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+.fake-img .img-200{
+    height:200px;
+}
+.fake-img .img-100{
+    height:100px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    margin-top: 20px;
+    color: black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .left-column, .right-column {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.per-info{
+
+
+}
+.per-info input{
+    padding: 6px;
+    font-size: 14px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+.per-info input[type=text]:focus {
+    background-color: rgba(168, 174, 203, 0.27);
+}
+.per-info label{
+    float: left;
+    width: 130px;
+
+
+}
+.per-info label:after{
+    content: ": "
+}
+.per-info div{
+    margin-top: 10px;
+}
+.btn-sites{
+    color: black;
+    margin-top: 10px;
+    background-color: rgba(17, 97, 238, 0.68);
+    border: 1px solid black;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+
+}
+.btn-sites:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.table-chef{
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 100%;
+
+}
+.table-chef tbody tr:hover{
+    background-color: lightcoral;
+}
+.table-chef td{
+    border: 1px solid;
+}
+.table-chef .td-img{
+    text-align: center;
+}
+.table-chef .td-right{
+    text-align: center;
+}
+
+.table-chef .tr-divider {
+    height: 15px;
+}
+
+
+
+
+/*END of ChefsHomepage*/
+
+/*Start Allergen */
+
+.img-allergen{
+    width: 30px;
+    height: 30px;
+}
+
+.table-allergens{
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+
+}
+.table-allergens th{
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+.table-allergens .tr-double {
+
+    border-bottom: double;
+
+}
+
+.table-allergens td{
+    border: 1px solid;
+}
+.table-allergens .td-img{
+    text-align: center;
+}
+.table-allergens .td-right{
+    text-align: center;
+}
+
+.table-allergens .tr-divider {
+    height: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
