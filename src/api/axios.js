@@ -1,5 +1,5 @@
 import axios from 'axios';
- const BASE_URL = 'http://testapp-env.eba-i33mimkd.us-east-1.elasticbeanstalk.com/';
+ const BASE_URL = 'https://testapp-env.eba-i33mimkd.us-east-1.elasticbeanstalk.com/';
 //const BASE_URL = 'http://localhost:3001';
 
 export default axios.create({
