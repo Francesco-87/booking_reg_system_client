@@ -78,7 +78,7 @@ export function Main(){
     // using a new Date() to initialize the first stateDay, afterwards stateDay gets data from Calendar(Daypicker)
     //r
     const modifiers = {
-        disabled: { daysOfWeek: [6, 0]},
+        disabled: {daysOfWeek: [0,6]},
         monday: { daysOfWeek: [1] },
         firstDayOfWeek: {daysOfWeek:[1]}
     };

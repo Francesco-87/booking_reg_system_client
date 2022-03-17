@@ -69,7 +69,9 @@ function Main() {
           phone: phone,
           password: password
 
-        })
+        }, {headers: { 'Content-Type': 'application/json' },
+          withCredentials: true})
+
             .then(function (response) {
               console.log(response);
               toggleButtonClick();
